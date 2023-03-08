@@ -1,55 +1,62 @@
-      /* -------------------------------------
-          GLOBAL RESETS
-      ------------------------------------- */
-      
-      /*All the styling goes here*/
-      
-      img {
-        border: none;
-        -ms-interpolation-mode: bicubic;
-        max-width: 100%; 
-      }
 
-      body {
-        background-color: #f6f6f6;
+      /*All the styleshee */
+      
+      /* -------------------------------------
+          Root
+      ------------------------------------- */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      -webkit-font-smoothing: antialiased;
+      font-size: 14px;
+      line-height: 1.4;
+      margin: 0;
+      padding: 0;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%; 
+    }
+
+    img {
+      border: none;
+      -ms-interpolation-mode: bicubic;
+      max-width: 100%; 
+    }
+
+    table {
+      border-collapse: separate;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      width: 100%; }
+      table td {
         font-family: sans-serif;
-        -webkit-font-smoothing: antialiased;
         font-size: 14px;
-        line-height: 1.4;
-        margin: 0;
-        padding: 0;
-        -ms-text-size-adjust: 100%;
-        -webkit-text-size-adjust: 100%; 
-      }
-
-      table {
-        border-collapse: separate;
-        mso-table-lspace: 0pt;
-        mso-table-rspace: 0pt;
-        width: 100%; }
-        table td {
-          font-family: sans-serif;
-          font-size: 14px;
-          vertical-align: top; 
+        vertical-align: top; 
       }
 
       /* -------------------------------------
-          BODY & CONTAINER
+          Class
       ------------------------------------- */
+
+      .container {
+        max-width: 600px;
+        max-height: 718px;
+        margin: 0 auto;
+        /* makes it centered
+        max-width: 600px;
+        max-height: 718px;
+        padding: 20px;
+        display: block;
+        margin: 0 auto !important; */
+        /* padding: 20px; */
+        box-sizing: border-box;
+        background-color: #ffffff 0% 0% no-repeat padding-box;
+        opacity: 1;
+      }
 
       .body {
-        background-color: #f6f6f6;
-        width: 100%; 
-      }
-
-      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
-      .container {
-        display: block;
-        margin: 0 auto !important;
-        /* makes it centered */
-        max-width: 580px;
-        padding: 10px;
-        width: 580px; 
+        width: 600px; 
       }
 
       /* This should also be a block element, so that it will fill 100% of the .container */
@@ -57,13 +64,37 @@
         box-sizing: border-box;
         display: block;
         margin: 0 auto;
-        max-width: 580px;
-        padding: 10px; 
+        max-width: 600px;
+        height: 445px;
+        top: 572px;
+        left: 0px;
+        background: #fff 0% 0% no-repeat padding-box;
+        opacity: 1;
+        padding: 20px; 
       }
 
-      /* -------------------------------------
-          HEADER, FOOTER, MAIN
-      ------------------------------------- */
+      /* HEADER, FOOTER, MAIN */
+
+      .header{
+        clear: both;
+        width: 600px;
+        height: 127px;
+        background-color: #000000;
+        opacity: 1;
+        top: 0px;
+        left: 0px;
+        position: relative;
+      }
+        .header img{
+          top: 24px;
+          left: 260px;
+          width: 80px;
+          height: 79px;
+          background-color: transparent 0% 0% no-repeat padding-box;
+          opacity: 1;
+
+        }
+
       .main {
         background: #ffffff;
         border-radius: 3px;
@@ -82,22 +113,33 @@
 
       .footer {
         clear: both;
-        margin-top: 10px;
         text-align: center;
         width: 100%; 
+        height: 146px;
+        background-color: #000000;
+        opacity: 1;
+        top: 572px;
+        left: 0px;
+        background: #000000 0% 0% no-repeat padding-box;
+        opacity: 1;
       }
         .footer td,
         .footer p,
         .footer span,
         .footer a {
           color: #999999;
-          font-size: 12px;
           text-align: center; 
+          font-family: normal normal Open sans-serif;
+          font-size: 17px;
+          font-weight: normal;
+          letter-spacing: 0px;
+          color: #ffffff;
+          margin: 0;
+          margin-bottom: 15px; 
       }
 
-      /* -------------------------------------
-          TYPOGRAPHY
-      ------------------------------------- */
+      /* TYPOGRAPHY */
+
       h1,
       h2,
       h3,
@@ -138,9 +180,8 @@
         text-decoration: underline; 
       }
 
-      /* -------------------------------------
-          BUTTONS
-      ------------------------------------- */
+      /* BUTTONS */
+
       .btn {
         box-sizing: border-box;
         width: 100%; }
@@ -181,62 +222,44 @@
       }
 
       /* -------------------------------------
-          OTHER STYLES THAT MIGHT BE USEFUL
+          ID
       ------------------------------------- */
-      .last {
-        margin-bottom: 0; 
+      #sosmed-flex {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        position: relative;
+
       }
 
-      .first {
-        margin-top: 0; 
+      #sosmed-item{
+        display: flex;
+        flex-wrap: wrap;
+        /* flex: 25%; */
+        width: 17px;
+        opacity: 1;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        top:0;
+        left: 15px;
+        bottom: 0;
+        right: 15px;
+        
       }
 
-      .align-center {
-        text-align: center; 
+      a#sosmed-item{
+        margin-right: 17px;
       }
-
-      .align-right {
-        text-align: right; 
-      }
-
-      .align-left {
-        text-align: left; 
-      }
-
-      .clear {
-        clear: both; 
-      }
-
-      .mt0 {
-        margin-top: 0; 
-      }
-
-      .mb0 {
-        margin-bottom: 0; 
-      }
-
-      .preheader {
-        color: transparent;
-        display: none;
-        height: 0;
-        max-height: 0;
-        max-width: 0;
-        opacity: 0;
-        overflow: hidden;
-        mso-hide: all;
-        visibility: hidden;
-        width: 0; 
-      }
-
-      .powered-by a {
-        text-decoration: none; 
-      }
-
-      hr {
-        border: 0;
-        border-bottom: 1px solid #f6f6f6;
-        margin: 20px 0; 
-      }
+      
+      /* Responsive layout - makes a one column layout instead of a two-column layout */
+      /* @media (max-width: 800px) {
+        .sosmed-flex {
+          flex-direction: column;
+        }
+      } */
 
       /* -------------------------------------
           RESPONSIVE AND MOBILE FRIENDLY STYLES
@@ -321,4 +344,62 @@
           background-color: #34495e !important;
           border-color: #34495e !important; 
         } 
+      }
+
+      /* -------------------------------------
+          OTHER STYLES THAT MIGHT BE USEFUL
+      ------------------------------------- */
+      .last {
+        margin-bottom: 0; 
+      }
+
+      .first {
+        margin-top: 0; 
+      }
+
+      .align-center {
+        text-align: center; 
+      }
+
+      .align-right {
+        text-align: right; 
+      }
+
+      .align-left {
+        text-align: left; 
+      }
+
+      .clear {
+        clear: both; 
+      }
+
+      .mt0 {
+        margin-top: 0; 
+      }
+
+      .mb0 {
+        margin-bottom: 0; 
+      }
+
+      .preheader {
+        color: transparent;
+        display: none;
+        height: 0;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        visibility: hidden;
+        width: 0; 
+      }
+
+      .powered-by a {
+        text-decoration: none; 
+      }
+
+      hr {
+        border: 0;
+        border-bottom: 1px solid #f6f6f6;
+        margin: 20px 0; 
       }
