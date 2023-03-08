@@ -1,5 +1,5 @@
 
-      /*All the styleshee */
+      /*All the stylesheet */
       
       /* -------------------------------------
           Root
@@ -70,7 +70,6 @@
         left: 0px;
         background: #fff 0% 0% no-repeat padding-box;
         opacity: 1;
-        padding: 20px; 
       }
 
       /* HEADER, FOOTER, MAIN */
@@ -149,14 +148,22 @@
         font-weight: 400;
         line-height: 1.4;
         margin: 0;
-        margin-bottom: 30px; 
+        margin-bottom: 30px;
+
       }
 
       h1 {
-        font-size: 35px;
-        font-weight: 300;
+        color: #000000;
+        font-family: normal normal Open sans-serif bold 43px;
+        letter-spacing: 0px;
+        opacity: 1;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 68px;
         text-align: center;
-        text-transform: capitalize; 
+        margin: 0;
+        top:92 px;
+        /* margin-bottom: 14px; */
       }
 
       p,
@@ -164,7 +171,9 @@
       ol {
         font-family: sans-serif;
         font-size: 14px;
+        width: 540px;
         font-weight: normal;
+        color: #5E5E5E;
         margin: 0;
         margin-bottom: 15px; 
       }
@@ -196,23 +205,31 @@
           text-align: center; 
       }
         .btn a {
-          background-color: #ffffff;
-          border: solid 1px #3498db;
-          border-radius: 5px;
-          box-sizing: border-box;
-          color: #3498db;
+          background-color: #E0CB90;
+          border-radius: 0px;
+          color: #151515;
+          height: 44px;
           cursor: pointer;
-          display: inline-block;
+          display: padding-box;
           font-size: 14px;
           font-weight: bold;
           margin: 0;
           padding: 12px 25px;
           text-decoration: none;
           text-transform: capitalize; 
+          text-align: center;
+          padding-left: 170px;
+          padding-right: 170px;
+          opacity: 1;
+
       }
 
       .btn-primary table td {
         background-color: #3498db; 
+      }
+
+      .btn-mike table td {
+        background-color: #E0CB90;
       }
 
       .btn-primary a {
@@ -237,7 +254,6 @@
       #sosmed-item{
         display: flex;
         flex-wrap: wrap;
-        /* flex: 25%; */
         width: 17px;
         opacity: 1;
         position: relative;
