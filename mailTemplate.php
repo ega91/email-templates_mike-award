@@ -16,8 +16,8 @@
                         <tr>
                         <td>
                             <h1>Email Verification</h1>
-                        <p style="top:14px;">Dear [User],</p>
-                            <p>Your email [user]@gmail.com needs verification.<br/>
+                        <p style="top:14px;">Dear Mr/Mrs Alexa,</p>
+                            <p>Your email alexa@gmail.com needs verification.<br/>
                                 Please enter this code to verify your email</p>
                                 <p style="padding-bottom:32px;"></p>
                             <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-mike">
